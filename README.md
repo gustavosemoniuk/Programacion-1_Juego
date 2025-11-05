@@ -1,2 +1,2 @@
 # Programacion-1_Juego
-Gustavo Semoniuk, Santiago Aderiam
+Gustavo Semoniuk, Santiago Aderian
