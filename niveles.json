@@ -1,0 +1,32 @@
+{
+  "nivel_1": {
+    "nombre_tematica": "Dark Fantasy",
+    "caras_dados": {
+      "1": "Espectro",
+      "2": "Demonio",
+      "3": "Guerrero Maldito",
+      "4": "Hechicera",
+      "5": "Dragón",
+      "6": "Dios Antiguo"
+    },
+    "categorias": {
+      "unos": "Espectros",
+      "doses": "Demonios",
+      "treses": "Guerreros Malditos",
+      "cuatros": "Hechiceras",
+      "cincos": "Dragones",
+      "seises": "Dioses Antiguos",
+      "escalera": "Escalera",
+      "full": "Full",
+      "poker": "Poker",
+      "generala": "Generala"
+    },
+    "puntajes_especiales": {
+      "escalera": 20,
+      "full": 30,
+      "poker": 40,
+      "generala": 50,
+      "generala_servida": 100
+    }
+  }
+}
