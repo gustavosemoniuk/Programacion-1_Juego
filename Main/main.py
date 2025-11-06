@@ -12,10 +12,8 @@ while True:
 
     if opcion == "1":
         print("\nIniciando el juego...\n")
-        # Acá iría la función que maneja la partida
     elif opcion == "2":
         print("\nMostrando estadísticas...\n")
-        # Acá iría la función que muestra las estadísticas
     elif opcion == "3":
         pass
     elif opcion == "4":
