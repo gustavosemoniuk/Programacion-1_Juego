@@ -1,4 +1,3 @@
-# menu/menu.py
 
 def mostrar_menu_principal():
     print("\n" + "=" * 60)
