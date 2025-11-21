@@ -15,12 +15,12 @@ def mostrar_dados(dados, caras):
         print(f" Dado {i+1}: {nombre} ({valor})")
 
 caras = {
-      "1": "Espectro",
-      "2": "Demonio",
-      "3": "Guerrero Maldito",
-      "4": "Hechicera",
-      "5": "Dragón",
-      "6": "Dios Antiguo"
+    "1": "Espectro",
+    "2": "Demonio",
+    "3": "Guerrero Maldito",
+    "4": "Hechicera",
+    "5": "Dragón",
+    "6": "Dios Antiguo"
     }
 
 dados = tirar_dados()
