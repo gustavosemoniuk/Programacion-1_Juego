@@ -7,7 +7,7 @@ def mostrar_menu_principal():
     print("""
             1) Jugar
             2) Estadisticas
-            3) Créditos
+            3) Creditos
             4) Salir
     """)
 
