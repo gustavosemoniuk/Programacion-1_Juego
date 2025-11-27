@@ -72,6 +72,6 @@ def jugar_ronda(caras):
     
     print("Fin de la ronda")
     return dados
- 
+
 
 
