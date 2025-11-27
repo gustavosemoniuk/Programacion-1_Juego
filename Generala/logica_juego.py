@@ -68,3 +68,6 @@ def actualizar_puntaje(estado_juego, categoria, puntos):
     else:
         return False
 
+def avanzar_ronda(estado_juego):
+    
+    estado_juego["ronda_actual"] += 1
