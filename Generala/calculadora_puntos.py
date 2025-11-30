@@ -13,11 +13,13 @@ def calcular_puntos_base(dados, categoria):
     
     return puntos
 
+
 def es_escalera(dados):
     dados_ordenados = sorted(dados)
     escalera1 = [1, 2, 3, 4, 5]
     escalera2 = [2, 3, 4, 5, 6]
     return dados_ordenados == escalera1 or dados_ordenados == escalera2
+
 
 def es_full(dados):
     
@@ -41,6 +43,7 @@ def es_full(dados):
     
     return tiene_tres and tiene_dos
 
+
 def es_poker(dados):
     conteo = {}
     for dado in dados:
@@ -55,6 +58,7 @@ def es_poker(dados):
     
     return False
 
+
 def es_generala(dados):
     primer_dado = dados[0]
     for dado in dados:
@@ -62,10 +66,11 @@ def es_generala(dados):
             return False
     return True
 
+
 def evaluar_todas_categorias(dados):
     puntajes = {}
     
-    # Categorias basicas
+    # Categorías básicas
     puntajes["unos"] = calcular_puntos_base(dados, "unos")
     puntajes["doses"] = calcular_puntos_base(dados, "doses")
     puntajes["treses"] = calcular_puntos_base(dados, "treses")
@@ -73,7 +78,7 @@ def evaluar_todas_categorias(dados):
     puntajes["cincos"] = calcular_puntos_base(dados, "cincos")
     puntajes["seises"] = calcular_puntos_base(dados, "seises")
     
-    # Categorias especiales
+    # Categorías especiales
     puntajes["escalera"] = 20 if es_escalera(dados) else 0
     puntajes["full"] = 30 if es_full(dados) else 0
     puntajes["poker"] = 40 if es_poker(dados) else 0

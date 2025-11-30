@@ -1,3 +1,5 @@
+from dados import tirar_dados
+
 def inicializar_juego():
     
     estado = {
@@ -27,7 +29,7 @@ def juego_terminado(estado_juego):
 
 def obtener_mejor_categoria(dados, estado_juego):
     
-    from calculadora_puntos import evaluar_todas_categorias  # Importamos la evaluación
+    from calculadora_puntos import evaluar_todas_categorias  
     
     puntajes_posibles = evaluar_todas_categorias(dados)
     mejor_puntaje = 0
@@ -71,3 +73,48 @@ def actualizar_puntaje(estado_juego, categoria, puntos):
 def avanzar_ronda(estado_juego):
     
     estado_juego["ronda_actual"] += 1
+
+"""
+def turno_rival(dados, juego_maquina):
+   
+    from calculadora_puntos import evaluar_todas_categorias
+    
+    puntajes_posibles = evaluar_todas_categorias(dados)
+    mejor_categoria = None
+    mejor_puntaje = 0
+    
+    #busca mejor categoria
+    for categoria in juego_maquina["puntajes"]:
+        if juego_maquina["puntajes"][categoria] is None:
+            puntos = puntajes_posibles[categoria]
+            if puntos > mejor_puntaje:
+                mejor_puntaje = puntos
+                mejor_categoria = categoria
+    
+    #anota puntos
+    if mejor_categoria:
+        actualizar_puntaje(juego_maquina, mejor_categoria, mejor_puntaje)
+        return mejor_categoria, mejor_puntaje
+    
+    return None, 0
+"""
+
+def mostrar_comparativa(jugador, maquina):
+    """
+    Muestra la comparativa de puntajes
+    """
+    print("\n" + "="*40)
+    print("="*40)
+    print(f" TUS PUNTOS: {jugador['puntaje_total']}")
+    print(f" RIVAL: {maquina['puntaje_total']}")
+    
+    diferencia = jugador['puntaje_total'] - maquina['puntaje_total']
+    if diferencia > 0:
+        print(f"Vas ganando por {diferencia} puntos")
+    elif diferencia < 0:
+        print(f"Vas perdiendo por {abs(diferencia)} puntos")
+    else:
+        print("Están empatados")
+    print("="*40)
+
+
