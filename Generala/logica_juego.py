@@ -50,7 +50,6 @@ def obtener_mejor_categoria(dados, estado_juego):
 def categorias_disponibles(estado_juego):
     
     disponibles = []
-   
     for categoria in estado_juego["puntajes"]:
         puntos = estado_juego["puntajes"][categoria]
         if puntos is None:
